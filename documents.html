@@ -246,160 +246,7 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                           <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Delete</a>
-                          <a class="dropdown-item" href="#">Send</a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <!-- Second Row ----------------------------------------------------------------------------------------------------------------------------->
-                  <tr>
-                    <!-- First Column --------------------------------------------------------->
-                    <th scope="row">
-                      <div class="media align-items-center">
-                        <!-- <a href="#" class="avatar rounded-circle mr-3">
-                          <img alt="Image placeholder" src="../assets/img/theme/bootstrap.jpg">
-                        </a> -->
-                        <div class="media-body">
-                          <span class="name mb-0 text-sm">Creative Title 2</span>
-                        </div>
-                      </div>
-                    </th>
-
-                    <!-- Second Column --------------------------------------------------------->
-                    <td class="budget">
-                      Date
-                    </td>
-
-                    <!-- Third Column --------------------------------------------------------->
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-success"></i>
-                        <span class="status">completed</span>
-                      </span>
-                    </td>
-
-                    <!-- Fourth Column --------------------------------------------------------->
-                    <td>
-                      <div class="avatar-group">
-                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Ryan Tompson">
-                          <img alt="Image placeholder" src="assets/img/theme/team-1.jpg">
-                        </a>
-                      </div>
-                    </td>
-
-                    <!-- Burger --------------------------------------------------------->
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <i class="fas fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Delete</a>
-                          <a class="dropdown-item" href="#">Send</a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <!-- Third Row ----------------------------------------------------------------------------------------------------------------------------->
-                  <tr>
-                    <!-- First Column --------------------------------------------------------->
-                    <th scope="row">
-                      <div class="media align-items-center">
-                        <!-- <a href="#" class="avatar rounded-circle mr-3">
-                          <img alt="Image placeholder" src="../assets/img/theme/bootstrap.jpg">
-                        </a> -->
-                        <div class="media-body">
-                          <span class="name mb-0 text-sm">Creative Title 3</span>
-                        </div>
-                      </div>
-                    </th>
-
-                    <!-- Second Column --------------------------------------------------------->
-                    <td class="budget">
-                      Date
-                    </td>
-
-                    <!-- Third Column --------------------------------------------------------->
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-danger"></i>
-                        <span class="status">delayed</span>
-                      </span>
-                    </td>
-
-                    <!-- Fourth Column --------------------------------------------------------->
-                    <td>
-                      <div class="avatar-group">
-                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Ryan Tompson">
-                          <img alt="Image placeholder" src="assets/img/theme/team-1.jpg">
-                        </a>
-                      </div>
-                    </td>
-
-                    <!-- Burger --------------------------------------------------------->
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <i class="fas fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Delete</a>
-                          <a class="dropdown-item" href="#">Send</a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <!-- Fourth Row ----------------------------------------------------------------------------------------------------------------------------->
-                  <tr>
-                    <!-- First Column --------------------------------------------------------->
-                    <th scope="row">
-                      <div class="media align-items-center">
-                        <!-- <a href="#" class="avatar rounded-circle mr-3">
-                          <img alt="Image placeholder" src="../assets/img/theme/bootstrap.jpg">
-                        </a> -->
-                        <div class="media-body">
-                          <span class="name mb-0 text-sm">Creative Title 4</span>
-                        </div>
-                      </div>
-                    </th>
-
-                    <!-- Second Column --------------------------------------------------------->
-                    <td class="budget">
-                      Date
-                    </td>
-
-                    <!-- Third Column --------------------------------------------------------->
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-info"></i>
-                        <span class="status">on schedule</span>
-                      </span>
-                    </td>
-
-                    <!-- Fourth Column --------------------------------------------------------->
-                    <td>
-                      <div class="avatar-group">
-                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Ryan Tompson">
-                          <img alt="Image placeholder" src="assets/img/theme/team-1.jpg">
-                        </a>
-                      </div>
-                    </td>
-
-                    <!-- Burger --------------------------------------------------------->
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <i class="fas fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Delete</a>
+                          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modal-notification">Delete</a>
                           <a class="dropdown-item" href="#">Send</a>
                         </div>
                       </div>
@@ -408,6 +255,37 @@
                 </tbody>
               </table>
             </div>
+
+            <!-- Delete Modal -->
+            <div class="modal fade" id="modal-notification" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
+              <div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
+                  <div class="modal-content bg-gradient-danger">
+                    
+                      <div class="modal-header">
+                          <h6 class="modal-title" id="modal-title-notification">Your attention is required</h6>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">×</span>
+                          </button>
+                      </div>
+                      
+                      <div class="modal-body">
+                        
+                          <div class="py-3 text-center">
+                              <i class="fas fa-ban fa-3x"></i>
+                              <h4 class="heading mt-4">Are you Sure?</h4>
+                              <p>Do you really want to delete these records? This process cannot be undone</p>
+                          </div>
+                          
+                      </div>
+                      
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-white">Ok, Got it</button>
+                          <button type="button" class="btn btn-link text-white ml-auto" data-dismiss="modal">Cancel</button>
+                      </div>
+                      
+                  </div>
+              </div>
+          </div>
 
             <!-- Card footer -->
             <div class="card-footer py-4">
