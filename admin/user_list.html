@@ -254,7 +254,7 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                           <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Delete</a>
+                          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modal-notification">Delete</a>
                         </div>
                       </div>
                     </td>
@@ -309,7 +309,7 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                           <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Delete</a>
+                          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modal-notification">Delete</a>
                         </div>
                       </div>
                     </td>
@@ -412,6 +412,39 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- Edit Modal -->
+
+  <!-- Delete Modal -->
+  <div class="modal fade" id="modal-notification" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
+    <div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
+        <div class="modal-content bg-gradient-danger">
+          
+            <div class="modal-header">
+                <h6 class="modal-title" id="modal-title-notification">Your attention is required</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            
+            <div class="modal-body">
+              
+                <div class="py-3 text-center">
+                    <i class="fas fa-ban fa-3x"></i>
+                    <h4 class="heading mt-4">Are you Sure?</h4>
+                    <p>Do you really want to delete these records? This process cannot be undone</p>
+                </div>
+                
+            </div>
+            
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white">Ok, Got it</button>
+                <button type="button" class="btn btn-link text-white ml-auto" data-dismiss="modal">Cancel</button>
+            </div>
+            
+          </div>
+      </div>
   </div>
 
   <!-- Argon Scripts -->
