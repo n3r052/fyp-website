@@ -295,12 +295,12 @@
               <h3 class="mb-0">Documents</h3>
             </div>
             <!-- Light table -->
-            <div class="table-responsive">
-              <table class="table align-items-center table-flush">
+            <div class="table-responsive" data-toggle="list" data-list-values='["name", "date", "status"]'>
+              <table class="table align-items-center table-flush"  >
                 <thead class="thead-light">
                   <tr>
                     <th scope="col" class="sort" data-sort="name">Name</th>
-                    <th scope="col" class="sort" data-sort="budget">Date</th>
+                    <th scope="col" class="sort" data-sort="date">Date</th>
                     <th scope="col" class="sort" data-sort="status">Status</th>
                     <th scope="col">Users</th>
                     <th scope="col"></th>
@@ -612,6 +612,8 @@
   <!-- Optional JS -->
   <script src="assets/vendor/chart.js/dist/Chart.min.js"></script>
   <script src="assets/vendor/chart.js/dist/Chart.extension.js"></script>
+  <script src="assets/vendor/list.js/dist/list.min.js"></script>
+
   <!-- Argon JS -->
   <script src="assets/js/argon.js?v=1.2.0"></script>
 </body>
